@@ -118,7 +118,9 @@
                                                         </ul>
                                                     </div> --}}
 
-                                                    <div class="sharethis-inline-share-buttons" data-url="www.greenhackersinstitute.com" data-title="Sharing is great!"></div>
+                                                    <div class="sharethis-inline-share-buttons" data-url="www.greenhackersinstitute.com/eventSingle/{{$event_detail->id}}" data-title="Sharing is great!"></div>
+
+                                                      {{-- <div class="sharethis-inline-share-buttons" data-url="https://greenhackersinstitute.com/eventSingle/{{$event_detail->id}}" data-title="Sharing is great!"></div> --}}
 
                                                     <div class="event-more-detail">
                                                         <h4>MORE DETAIL</h4>

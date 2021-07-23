@@ -12,13 +12,13 @@
 */
 
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('home');
-Route::get('logout','Auth\LoginController@logout')->middleware('auth');
+// Route::get('/admin', 'HomeController@index')->name('home');
+// Route::get('logout','Auth\LoginController@logout')->middleware('auth');
 
 //for admin dashboard
-Route::group(['middleware'=>['auth','admin']],function(){
+// Route::group(['middleware'=>['auth','admin']],function(){
 
 //course
     Route::post('/insert/course','CourseController@store');
@@ -63,16 +63,15 @@ Route::group(['middleware'=>['auth','admin']],function(){
     Route::post('/get_all_enrollment','EnrollController@show');
     Route::post('/delete/enrolllment/{id}','EnrollController@destroy');
 
-
-});
-
-//teacher account
-    Route::get('/admin/teacher_account','AccountController@index');
-    Route::post('/insert/teacher_account','AccountController@store');
-    Route::post('/get_all_teacher_account','AccountController@get_all_teacher_account');
-    Route::post('/delete/teacher_account/{id}','AccountController@destroy');
+    //teacher account
+    Route::get('/admin/teacher_account', 'AccountController@index');
+    Route::post('/insert/teacher_account', 'AccountController@store');
+    Route::post('/get_all_teacher_account', 'AccountController@get_all_teacher_account');
+    Route::post('/delete/teacher_account/{id}', 'AccountController@destroy');
 
 //----------------------------------------
+
+// });
 
 //for teacher dashboard
 Route::group(['middleware'=>['auth','teacher']],function(){

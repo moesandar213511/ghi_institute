@@ -259,7 +259,7 @@
                                 <div class=" widget-inner">
                                     <h2 class="widget-title maincolor1">Facebook</h2>
                                     <div class="fb-page" data-href="https://www.facebook.com/greenhackersinstitute/" data-tabs="timeline" data-width="" data-height="250px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/greenhackersinstitute/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/greenhackersinstitute/">Green Hackers Institute</a></blockquote>
-                        </div>
+                                </div>
                                 </div>
                             </div>
                         </div>

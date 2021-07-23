@@ -22,6 +22,7 @@ class UIController extends Controller
             $course_data=new CourseData($data->id);
             array_push($academic_course,$course_data->getCourseData());
         }
+        // return $academic_course;
 
         $courses_o=Course::where('forhome','home')->orderBy('id','desc')->limit(4)->get();
         $other_course=[];
@@ -29,6 +30,7 @@ class UIController extends Controller
             $course_data=new CourseData($data->id);
             array_push($other_course,$course_data->getCourseData());
         }
+        // return $other_course;
         
         // footer
         $recent_blogs=Blog::orderBy('id','desc')->limit(6)->get();
@@ -95,7 +97,7 @@ class UIController extends Controller
 
     public function eventList()
     {
-        $events=Event::orderBy('date')->paginate(5);
+        $events=Event::orderBy('date','desc')->paginate(5);
         $arr=[];
         foreach ($events as $data){
             $event_data=new EventData($data->id);

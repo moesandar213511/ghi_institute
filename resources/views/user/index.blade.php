@@ -313,7 +313,7 @@
 
                                                     <div class="overlay-footer">
                                                         <div>
-                                                            {{str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",strip_tags($academic_course['0']['description'])),150)}}
+ {{str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",strip_tags($academic_course['0']['description'])),150)}}
                                                         </div>
                                                     </div>
                                                 </div>                                

@@ -25,6 +25,7 @@
 
 
     @yield('css')
+    
 </head>
 
 <body class="">

@@ -41,6 +41,8 @@
     <!-- Toastr notification -->
     <link rel="stylesheet" type="text/css" href="{{url('css/toastr.min.css')}}">
 
+    @yield('og')
+
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>

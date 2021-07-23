@@ -41,6 +41,8 @@
                                         </p>
                                     </div>
 
+                                    
+
 {{--                                    <div class="content-pad">--}}
 {{--                                        <div class="item-content">--}}
 {{--                                            <div class="item-meta blog-item-meta">--}}
@@ -166,3 +168,4 @@
             </div>
         </section>
 @endsection
+

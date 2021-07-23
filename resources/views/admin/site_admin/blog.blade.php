@@ -139,7 +139,7 @@
                                     <img src="{{asset('images/default.jpg')}}" id="imgs" class="imagePreview img-thumbnail">
                                     <label class="btn btn-primary upload_btn">
                                         Upload<input type="file" accept="image/png,image/jpeg,image/jpg" onchange="displaySelectedPhoto('update_photo','imgs')" id="update_photo" name="photo" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                                    </label>
+                                    </label>                                  
                                 </div>
                                 <div class="col-sm-8">
                                     <div class="row">
@@ -337,6 +337,7 @@
                     ['para', ['ul', 'ol', 'paragraph']],
                     ['height', ['height']],
                     ['view', ['fullscreen', 'codeview', 'help']],
+                    ['insert', ['link', 'picture', 'video']],
                 ],
             });
         });
